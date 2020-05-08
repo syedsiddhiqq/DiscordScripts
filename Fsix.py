@@ -3,12 +3,13 @@ import discord
 import re
 import time
 import random
-from Utils import *
-import Constants
+# from Utils import
+from OtherPyFiles import Utils
+from OtherPyFiles import Constants
 
 
 # Creating a instance of discord
-client = createInstanceOfDiscord(Constants.token_for_f666)
+client = Utils.createInstanceOfDiscord(Constants.token_for_f666)
 
 # This event gets executed when the client is logged in.
 @client.event
