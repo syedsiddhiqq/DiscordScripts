@@ -3,12 +3,12 @@ import discord
 import re
 import time
 import random
-from Utils import *
-import Constants
+from OtherPyFiles import Utils
+from OtherPyFiles import Constants
 
 
 # Creating a instance of discord
-client = createInstanceOfDiscord(Constants.token_for_godofspeed)
+client = Utils.createInstanceOfDiscord(Constants.token_for_godofspeed)
 
 # This event gets executed when the client is logged in.
 @client.event
@@ -68,7 +68,7 @@ async def on_message(message):
 
     # Sending auto message if a giveaway is won.
     if(client.user in messageObj.mentions):
-        callMyPhone()
+        Utils.callMyPhone()
 
 
 

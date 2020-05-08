@@ -75,7 +75,7 @@ async def on_message(message):
 
     # Sending auto message if a giveaway is won.
     if(client.user in messageObj.mentions):
-        callMyPhone()
+        Utils.callMyPhone()
 
 
 
